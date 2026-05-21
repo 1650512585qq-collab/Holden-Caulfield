@@ -1,68 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Holden Caulfield's Downward Steps</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="app" aria-labelledby="title">
-      <section class="intro">
-        <p class="eyebrow">The Catcher in the Rye</p>
-        <h1 id="title">Holden Caulfield's steps down</h1>
-        <p>
-          Click through the stairs to follow how Holden starts off acting in
-          control, but slowly gets more tired, lonely, and mentally worn down.
-        </p>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holden Caulfield Journey Map</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="intro">
+      <p class="eyebrow">The Catcher in the Rye - Journey Map</p>
+      <h1>Holden Caulfield's Underground Descent</h1>
+      <p>
+        A creative subway-style map that follows Holden's physical route downward through New York.
+        At the bottom, the route turns into a carousel loop, while the California frame sits outside the trip as later narration.
+      </p>
+      <div class="legend" aria-label="map legend">
+        <span><b class="dot physical"></b> Physical stop</span>
+        <span><b class="dot emotional"></b> Emotional stop</span>
+        <span><b class="dot frame"></b> California frame</span>
+      </div>
+    </header>
 
-      <section class="stage" aria-label="Interactive staircase presentation">
-        <div class="staircase" id="staircase"></div>
+    <section class="stage" aria-label="interactive Holden journey map">
+      <div class="map-card">
+        <div class="map-topline">
+          <span>Pencey</span>
+          <span>New York</span>
+          <span>Narration frame</span>
+        </div>
 
-        <article class="detail" id="detail" aria-live="polite">
-          <div class="detail-topline">
-            <span id="phaseNumber">Phase 1</span>
-            <span id="chapterRange">Opening</span>
+        <div id="subwayMap" class="subway-map" aria-label="Clickable subway descent map">
+          <svg class="route-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <path class="route-shadow" d="M 8 15 C 18 22, 22 30, 29 35 S 42 41, 48 48 S 55 62, 65 66 S 72 76, 81 84 C 87 91, 78 97, 69 91 C 61 84, 68 76, 78 80 C 86 84, 82 91, 72 88" />
+            <path class="route-main" d="M 8 15 C 18 22, 22 30, 29 35 S 42 41, 48 48 S 55 62, 65 66 S 72 76, 81 84 C 87 91, 78 97, 69 91 C 61 84, 68 76, 78 80 C 86 84, 82 91, 72 88" />
+            <path class="frame-connector" d="M 78 80 C 84 64, 88 43, 91 25" />
+            <path class="surface-line" d="M 5 18 C 28 16, 48 22, 66 18 S 85 12, 96 15" />
+          </svg>
+          <div class="map-label surface">surface: schools, status, adults</div>
+          <div class="map-label bottom">bottom loop: carousel, pause, ambiguity</div>
+        </div>
+      </div>
+
+      <aside class="detail" aria-live="polite">
+        <div class="detail-topline">
+          <span id="stopType">Physical Point</span>
+          <span id="stopNumber">1 / 10</span>
+        </div>
+        <h2 id="stopTitle">Pencey Prep</h2>
+        <p class="meta" id="stopPlace">Place</p>
+        <p class="people" id="stopPeople">People involved</p>
+
+        <blockquote id="stopQuote">Quote</blockquote>
+
+        <h3>What happens here</h3>
+        <p id="stopScene"></p>
+
+        <h3>Why this stop matters</h3>
+        <p id="stopAnalysis"></p>
+
+        <div class="meters">
+          <div class="meter">
+            <div class="meter-label"><span>Physical movement</span><strong id="physicalScore">0%</strong></div>
+            <div class="bar"><span id="physicalBar"></span></div>
           </div>
-          <h2 id="phaseTitle"></h2>
-          <p id="phaseScene"></p>
-
-          <div class="meters" aria-label="Body and mind condition meters">
-            <div class="meter">
-              <div class="meter-label">
-                <span>Body</span>
-                <strong id="physicalScore"></strong>
-              </div>
-              <div class="bar"><span id="physicalBar"></span></div>
-              <p id="physicalText"></p>
-            </div>
-            <div class="meter">
-              <div class="meter-label">
-                <span>Mind</span>
-                <strong id="mentalScore"></strong>
-              </div>
-              <div class="bar"><span id="mentalBar"></span></div>
-              <p id="mentalText"></p>
-            </div>
+          <div class="meter">
+            <div class="meter-label"><span>Emotional despair</span><strong id="despairScore">0%</strong></div>
+            <div class="bar"><span id="despairBar"></span></div>
           </div>
+        </div>
 
-          <div class="connector-note" id="connectorNote"></div>
+        <div class="theme-box">
+          <h3>Thematic tags</h3>
+          <div id="themes" class="themes"></div>
+        </div>
 
-          <div class="controls">
-            <button id="previous" type="button" aria-label="Previous phase">
-              <span aria-hidden="true">&lt;</span>
-              Previous
-            </button>
-            <button id="next" type="button" aria-label="Next phase">
-              Next
-              <span aria-hidden="true">&gt;</span>
-            </button>
-          </div>
-        </article>
-      </section>
-    </main>
+        <div class="spiral-note">
+          <h3>Connection to the larger downward spiral</h3>
+          <p id="spiralNote"></p>
+        </div>
 
-    <script src="script.js"></script>
-  </body>
+        <div class="controls">
+          <button id="previous" type="button">&lt; Previous</button>
+          <button id="next" type="button">Next &gt;</button>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>
