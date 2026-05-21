@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holden Caulfield: A Staircase Descent</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-labelledby="title">
+      <section class="intro">
+        <p class="eyebrow">The Catcher in the Rye</p>
+        <h1 id="title">Holden Caulfield: a connected staircase downward</h1>
+        <p>
+          Move through the steps to trace how Holden shifts from restless energy
+          and defiance into exhaustion, isolation, and emotional collapse.
+        </p>
+      </section>
+
+      <section class="stage" aria-label="Interactive staircase presentation">
+        <div class="staircase" id="staircase"></div>
+
+        <article class="detail" id="detail" aria-live="polite">
+          <div class="detail-topline">
+            <span id="phaseNumber">Phase 1</span>
+            <span id="chapterRange">Opening</span>
+          </div>
+          <h2 id="phaseTitle"></h2>
+          <p id="phaseScene"></p>
+
+          <div class="meters" aria-label="Physical and psychological condition meters">
+            <div class="meter">
+              <div class="meter-label">
+                <span>Physical state</span>
+                <strong id="physicalScore"></strong>
+              </div>
+              <div class="bar"><span id="physicalBar"></span></div>
+              <p id="physicalText"></p>
+            </div>
+            <div class="meter">
+              <div class="meter-label">
+                <span>Psychological state</span>
+                <strong id="mentalScore"></strong>
+              </div>
+              <div class="bar"><span id="mentalBar"></span></div>
+              <p id="mentalText"></p>
+            </div>
+          </div>
+
+          <div class="connector-note" id="connectorNote"></div>
+
+          <div class="controls">
+            <button id="previous" type="button" aria-label="Previous phase">
+              <span aria-hidden="true">&lt;</span>
+              Previous
+            </button>
+            <button id="next" type="button" aria-label="Next phase">
+              Next
+              <span aria-hidden="true">&gt;</span>
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
