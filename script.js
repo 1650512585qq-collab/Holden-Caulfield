@@ -1,101 +1,101 @@
 const phases = [
   {
-    title: "Expelled, restless, still performing confidence",
+    title: "Kicked out, but still acting okay",
     range: "Pencey Prep",
     scene:
-      "At the start, Holden is already isolated from school life, but he still talks with sarcasm, judgment, and swagger. He is physically worn down after the fencing trip and emotionally detached from the institution around him.",
+      "At the beginning, Holden has already been kicked out of Pencey. He talks like he does not care, but he is already tired, annoyed, and separated from everyone around him.",
     physical: 72,
     mental: 64,
     physicalText:
-      "Tired and careless, but still mobile. He can leave, argue, pack, and move through the world on adrenaline.",
+      "He is worn out from school and the fencing trip, but he still has enough energy to leave and keep going.",
     mentalText:
-      "Defensive and cynical. His loneliness is visible, but he keeps it disguised as superiority.",
+      "He acts sarcastic and judgmental, which hides how lonely he already is.",
     link:
-      "The first step is high because he still has motion and attitude. The drop begins when escape becomes his main plan."
+      "This step is still high because Holden has energy and attitude. The fall starts when running away becomes his solution."
   },
   {
-    title: "Leaving school turns freedom into drift",
+    title: "Leaving school makes things less stable",
     range: "Train to New York",
     scene:
-      "Once he leaves Pencey early, Holden gains freedom but loses structure. His lies and invented persona on the train show how separated he is from honest contact.",
+      "When Holden leaves Pencey early, he is technically free, but he does not really have a plan. On the train, he lies to Mrs. Morrow instead of just being honest.",
     physical: 66,
     mental: 56,
     physicalText:
-      "He is moving quickly, but the movement is aimless rather than healthy.",
+      "He is traveling and moving around, but it feels more like wandering than progress.",
     mentalText:
-      "He avoids direct truth, using performance to keep intimacy at a distance.",
+      "He keeps making up stories, which shows he has trouble talking to people directly.",
     link:
-      "The staircase connects freedom to instability: each new place gives him motion, but not relief."
+      "This step connects freedom with confusion. Holden gets away from school, but not from himself."
   },
   {
-    title: "Nightlife exposes loneliness instead of curing it",
+    title: "New York does not make him feel better",
     range: "Hotel and clubs",
     scene:
-      "In New York, he searches for adult experience through hotels, bars, dancing, and strangers. The city gives him noise, but not belonging.",
+      "In New York, Holden tries hotels, clubs, dancing, and random conversations. The city is busy, but he still seems alone almost the whole time.",
     physical: 54,
     mental: 45,
     physicalText:
-      "Sleep loss, cold streets, and late-night wandering start to grind him down.",
+      "He is staying up late, walking around, and getting more tired.",
     mentalText:
-      "He wants connection, then rejects or sabotages it when it appears. The gap between desire and trust widens.",
+      "He wants someone to talk to, but he also pushes people away or gets disappointed by them.",
     link:
-      "This step drops because entertainment fails as medicine. The more he tries to act adult, the younger and more exposed he seems."
+      "The stair drops here because all the noise of the city does not fix his loneliness."
   },
   {
-    title: "Conflict and humiliation make the fall bodily",
+    title: "The hotel scene hits him hard",
     range: "Maurice and Sunny",
     scene:
-      "The encounter with Sunny and Maurice turns his emotional confusion into physical vulnerability. He is frightened, ashamed, and then hurt.",
+      "The scene with Sunny and Maurice shows Holden at a much lower point. He is scared, embarrassed, and then physically hurt.",
     physical: 36,
     mental: 34,
     physicalText:
-      "The beating marks a real physical low: pain, nausea, and exhaustion replace his earlier nervous energy.",
+      "After Maurice hits him, his problems are not just in his head anymore. He is actually hurt and weak.",
     mentalText:
-      "His fantasies of bravery collapse into self-pity and helplessness.",
+      "He imagines himself being tougher than he is, but the reality is that he feels helpless.",
     link:
-      "The descent becomes visible here. Psychological fragility is no longer hidden behind jokes; it appears in the body."
+      "This is where the fall becomes physical. His mental state and body both drop at the same time."
   },
   {
-    title: "Old attachments cannot stabilize him",
+    title: "People from his past do not really help",
     range: "Sally and Carl",
     scene:
-      "Holden reaches toward people from his past, but his conversations with Sally and Carl fall apart. He wants rescue while resisting the ordinary compromises relationships require.",
+      "Holden tries reaching out to Sally and Carl, but both conversations go badly. He wants someone to understand him, but he also makes it hard for that to happen.",
     physical: 30,
     mental: 25,
     physicalText:
-      "He is cold, tired, and increasingly scattered as the city wears on him.",
+      "By this point he is cold, tired, and not taking care of himself very well.",
     mentalText:
-      "He swings between idealism, disgust, anger, and panic. His plans become less realistic.",
+      "His thoughts jump around. He gets angry, makes unrealistic plans, and seems more desperate.",
     link:
-      "The step connects failed social contact to deeper isolation. Every attempted bridge becomes another proof, to him, that the world is false."
+      "This stair drops because even when Holden talks to people he knows, he ends up feeling more alone."
   },
   {
-    title: "Phoebe reveals the real wound",
+    title: "Phoebe shows what he is really afraid of",
     range: "Home and museum",
     scene:
-      "With Phoebe, Holden's protective fantasy becomes clear. He dreams of saving children from falling, which reveals his grief, fear of adulthood, and need to protect innocence.",
+      "With Phoebe, Holden finally sounds more honest. His idea about catching kids before they fall shows that he is scared of growing up and scared of losing innocence.",
     physical: 24,
     mental: 20,
     physicalText:
-      "He is depleted and close to collapse, sneaking around instead of functioning normally.",
+      "He is exhausted and sneaking around instead of living normally.",
     mentalText:
-      "His love for Phoebe is genuine, but it also shows how desperate he is for something pure and stable.",
+      "He loves Phoebe, and she is one of the only people who makes him seem less fake.",
     link:
-      "This step is low, but not empty. Phoebe becomes the handrail: she does not erase the fall, but she makes honesty possible."
+      "This step is low, but Phoebe gives it meaning. She helps show the real reason behind his breakdown."
   },
   {
-    title: "Breakdown, surrender, and a fragile turn",
+    title: "At the end, he cannot keep pretending",
     range: "Carousel and aftermath",
     scene:
-      "Near the end, Holden is physically sick and psychologically overwhelmed. Watching Phoebe on the carousel, he begins to accept that he cannot control every fall.",
+      "Near the end, Holden is sick, exhausted, and mentally overwhelmed. When he watches Phoebe on the carousel, he seems to understand that he cannot protect everyone from everything.",
     physical: 14,
     mental: 18,
     physicalText:
-      "Illness and exhaustion finally catch up with him. The body records the cost of the whole journey.",
+      "His body finally gives out after all the stress, walking, cold, and lack of rest.",
     mentalText:
-      "He reaches a low point, but there is a small shift from control toward acceptance.",
+      "He is at a low point, but there is also a small sign that he might accept help.",
     link:
-      "The final stair is lowest because Holden is weakest, yet it also bends toward recovery. The descent ends with the possibility of help."
+      "The last stair is the lowest because Holden is weakest here. It is not a happy ending exactly, but it does leave room for recovery."
   }
 ];
 
